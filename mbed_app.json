@@ -1,6 +1,10 @@
 {
     "macros": [ "MBED_ALL_STATS_ENABLED"],
     "config": {
+        "database":{
+            "help":  "Treasure Data database name",
+            "value": "\"REPLACE_WITH_YOUR_DB_NAME\""
+        },
         "api-key":{
             "help":  "REST API Key for Treasure Data",
             "value": "\"REPLACE_WITH_YOUR_KEY\""

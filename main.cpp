@@ -53,10 +53,10 @@ int main(void) {
   printf("Gateway: %s\n", net->get_gateway());
 
   // Create Treasure data objects (Network, Database, Table, APIKey)
-  TreasureData_RESTAPI* heap  = new TreasureData_RESTAPI(net, "takuti", "heap_info",  MBED_CONF_APP_API_KEY);
-  TreasureData_RESTAPI* cpu   = new TreasureData_RESTAPI(net, "takuti", "cpu_info",   MBED_CONF_APP_API_KEY);
-  TreasureData_RESTAPI* stack = new TreasureData_RESTAPI(net, "takuti", "stack_info", MBED_CONF_APP_API_KEY);
-  TreasureData_RESTAPI* sys   = new TreasureData_RESTAPI(net, "takuti", "sys_info",   MBED_CONF_APP_API_KEY);
+  TreasureData_RESTAPI* heap  = new TreasureData_RESTAPI(net, MBED_CONF_APP_DATABASE, "heap_info",  MBED_CONF_APP_API_KEY);
+  TreasureData_RESTAPI* cpu   = new TreasureData_RESTAPI(net, MBED_CONF_APP_DATABASE, "cpu_info",   MBED_CONF_APP_API_KEY);
+  TreasureData_RESTAPI* stack = new TreasureData_RESTAPI(net, MBED_CONF_APP_DATABASE, "stack_info", MBED_CONF_APP_API_KEY);
+  TreasureData_RESTAPI* sys   = new TreasureData_RESTAPI(net, MBED_CONF_APP_DATABASE, "sys_info",   MBED_CONF_APP_API_KEY);
 
   // Device Information Objects
   mbed_stats_cpu_t   cpuinfo;
