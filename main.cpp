@@ -15,7 +15,7 @@
  */
 
 #include "mbed-os/mbed.h"
-#include "mbed-os-treasure-data-rest/treasure-data-rest.h"
+#include "mbed-os-treasuredata-rest/treasure-data-rest.h"
 
 #define BUFF_SIZE   100
 
